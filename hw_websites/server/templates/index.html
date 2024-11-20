@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section id="hero" class="mb-12">
+    <h2 class="text-4xl font-bold mb-4">Expert Road Construction in {{ city_name }}, Florida</h2>
+    <div class="swiper-container mb-6">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="/assets/images/road1.jpg" alt="Road construction project 1 in {{ city_name }}" class="w-full h-auto">
+            </div>
+            <div class="swiper-slide">
+                <img src="/assets/images/road2.jpg" alt="Road construction project 2 in {{ city_name }}" class="w-full h-auto">
+            </div>
+            <div class="swiper-slide">
+                <img src="/assets/images/road3.jpg" alt="Road construction project 3 in {{ city_name }}" class="w-full h-auto">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <p class="text-xl mb-6">Trust HW Roads for all your road building and maintenance needs in {{ city_name }}. We deliver quality, durability, and excellence in every project.</p>
+    <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition duration-300">Get a Free Quote</a>
+</section>
+{% endblock %}
